@@ -1,0 +1,50 @@
+<div class="banner">
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <div class="form-container">
+    <h1>Расскажите о себе</h1>
+    </div>
+    <div class="form-container">
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-row">
+                {{ form.surname|as_crispy_field }}
+            </div>
+
+            <div class="form-row">
+                {{ form.name|as_crispy_field }}
+            </div>
+
+            <div class="form-row">
+                {{ form.patronymic|as_crispy_field }}
+            </div>
+
+            <div class="form-row">
+                {{ form.birth_year|as_crispy_field }}
+            </div>
+
+            <div class="form-row">
+                {{ form.sex|as_crispy_field }}
+            </div>
+
+            <div class="form-row">
+                {{ form.job|as_crispy_field }}
+            </div>
+
+            <div class="form-container">
+            <button class="button" type='submit'><span></span>Отправить</button>
+            <button class="button" onclick="window.location.href='/survey/start'"><span></span>Пропустить</button>
+        </div>
+
+        </form>
+        <!-- Skip button added here -->
+
+
+    </div>
+
+{% endblock %}
+</div>

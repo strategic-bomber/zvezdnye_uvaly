@@ -1,0 +1,77 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/media/frontend/img2.jpg);
+    background-size: 100% 100%;
+}
+
+.form-container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.form-container h1{
+    position: relative;
+    top: -350px;
+}
+
+
+.form-container h1{
+    font-size: 40px;
+    margin-top: 80px;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.send-button {
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #009688;
+    border: 0;
+    border-bottom: 2px solid #009688;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #009688;
+    box-shadow: inset 0 -2px #009688;
+}
+.button{
+    width: 150px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 5px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    position: relative;
+    top: 350px;
+    overflow: hidden;
+    cursor: pointer;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    transition: .5s;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
