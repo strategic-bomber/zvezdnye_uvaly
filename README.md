@@ -1,12 +1,15 @@
 ЗАПУСК СЕРВЕРА
 1) Переходим в директорию backend и устанавливаем req.txt:
+
 cd backend
 
 -m pip install -r req.txt
 
 python manage.py migrate
+
 3) Запускаем сервер:
 python manage.py runserver
+
 4) Переходим по ссылке http://127.0.0.1:8000/
 
 
